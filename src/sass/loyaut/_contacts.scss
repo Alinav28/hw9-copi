@@ -1,3 +1,4 @@
+//@media screen and (max-width: 768px) {
 .visually-hidden {
   position: absolute !important;
   clip: rect(1px 1px 1px 1px);
@@ -8,13 +9,13 @@
   overflow: hidden;
 }
 .conacts-section {
+  width: 100%;
   padding-left: 20px;
   padding-right: 20px;
-  background: hsl(354, 100%, 98%);
+  background: rgb(255, 245, 246);
   margin: 0 auto;
 }
 .contacts {
-  width: 320px;
   margin: 0 auto;
 }
 .contact__cards-list {
@@ -24,7 +25,7 @@
   width: 220px;
   margin: 0 auto;
   padding: 43px 20px;
-  background: #ffffff;
+  background: rgb(255, 255, 255);
   box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
   border-radius: 24px;
   &:not(:last-child) {
@@ -117,6 +118,7 @@
   margin-bottom: 10px;
 }
 .button-width {
+  width: 161px;
   height: 44px;
   margin: 0 auto;
   display: flex;
@@ -125,7 +127,7 @@
   justify-content: center;
   border: none;
   padding-left: 17px;
-  padding-right: 17px;
+  padding-right: 29.45px;
   border-radius: 22px;
   font-family: DM Sans;
   font-weight: bold;
@@ -133,10 +135,38 @@
   line-height: 21px;
 }
 .conacts-button {
+  position: relative;
   background: #d41342;
   color: #ffffff;
+  &:hover,
+  &:focus {
+    background: #d41342;
+  }
+}
+.conacts-button-svg {
+  margin: 0 auto;
+  position: absolute;
+  top: 17px;
+  right: 10px;
+  width: 14.61px;
+  height: 19px;
 }
 .conacts-bt {
+  position: relative;
   background: #ffffff;
   color: #d41443;
+  &:hover,
+  &:focus {
+    background: #ecebeb;
+  }
 }
+.conacts-bt-svg {
+  margin: 0 auto;
+  position: absolute;
+  top: 18px;
+  right: 28px;
+  width: 6.61px;
+  height: 11px;
+}
+
+//}
